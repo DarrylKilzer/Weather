@@ -1,0 +1,24 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Promises</title>
+</head>
+
+<body>
+  <form onsubmit="app.controllers.weatherCtrl.promiseChain(event)">
+    <div class="form-group">
+      <label for="zip">Zip Code:</label>
+      <input class="form-control" name="zip" type="text">
+    </div>
+    <button type="submit">Check Weather</button>
+  </form>
+  <div class="row" id="weather">
+  </div>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="services.js"></script>
+  <script src="controller.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
